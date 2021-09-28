@@ -390,6 +390,54 @@ nav a {
 
 /* sign-up section end */
 
+/* treasury-network section start */
+
+.treasury-network { margin: 71px 0;}
+
+.treasury-network .wrapper {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'lato',sans-serif;
+}
+
+.treasury-network .treasury { width: 40%;}
+.treasury-network figure { width: 49%;}
+
+.treasury-network h4 {
+  color: #3c7ab8;
+  font-family: 'dosis',sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.treasury-network p {
+  margin: 11px 0 44px;
+  color: #6b6b6b;
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+
+.treasury ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.treasury li { 
+  width: 47%;
+  padding: 1px 0 6px;
+  border: 1px solid #269fe3;
+  text-align: center;
+}
+
+.treasury a { font-size: 12px;}
+.treasury li:first-child { background-color: #269fe3;}
+.treasury li:first-child a { color: #e6e6e6;}
+.treasury li:last-child a { color: #269fe3;}
+
+/* treasury-network section end */
+
 /*=================================
   main styling ends here
 =================================*/

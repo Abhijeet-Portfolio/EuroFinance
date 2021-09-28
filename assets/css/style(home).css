@@ -287,6 +287,46 @@ nav a {
 
 /* flagship section end */
 
+/* news section start */
+
+.news { 
+  margin: 41px 0;
+  font-family: 'dosis',sans-serif;
+}
+
+.news h4 {
+  font-size: 26px;
+  color: #397dbc;
+}
+
+.news ul {
+  margin: 19px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news li { width: 23%;}
+
+.news h5 {
+  color: #397dbc;
+  font-size: 17px;
+}
+
+.news span {
+  color: #bac1d1;
+  font-family: 'lato',sans-serif;
+  font-size: 12px;
+}
+
+.news p {
+  color: #6e6e6e;
+  font-family: 'lato',sans-serif;
+  font-size: 10.2px;
+  line-height: 1.4;
+}
+
+/* news section end */
+
 /*=================================
   main styling ends here
 =================================*/

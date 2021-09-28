@@ -327,6 +327,69 @@ nav a {
 
 /* news section end */
 
+/* sign-up section start */
+
+.sign-up { 
+  padding: 50px 0;
+  background-color: #1e3066;
+  font-family: 'lato',sans-serif;
+}
+
+.sign-up h4 {
+  color: #ffffff;
+  font-family: 'dosis',sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.sign-up form { 
+  width: 50%;
+  margin: 30px 0;
+}
+
+.sign-up .form-groups,
+.sign-up .form-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up .form-groups .form-group { width: 46%;}
+.sign-up .form-groups input { padding: 5px 4%;}
+.sign-up .form-group { position: relative;}
+
+
+.sign-up input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 2%;
+  border: 1px solid #ffffff;
+  margin: 12px 0;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+
+.sign-up input::placeholder { color: #bbbbbb;}
+.sign-up .form-control { width: 25%;}
+
+.sign-up .form-control input {
+  border: 1px solid #2c75ba;
+  background-color: #2c75ba;
+}
+
+.sign-up span { 
+  display: none;
+  position: absolute;
+  top: 41px;
+  color: #ff3e3e;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+/* sign-up section end */
+
 /*=================================
   main styling ends here
 =================================*/

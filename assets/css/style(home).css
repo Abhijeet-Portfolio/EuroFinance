@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 51%; 
   margin: 0 auto;
 }
 /*=================================
@@ -179,6 +179,7 @@ nav a {
 .welcome { 
   padding: 56px 24.2% 115px 24.8%;
   font-family: 'dosis',sans-serif;
+  font-weight: 300;
 }
 
 .welcome h2 {
@@ -201,11 +202,39 @@ nav a {
   main styling starts here
 =================================*/
 
+/* core-business css start */
 
+.core-business { 
+  font-family: 'dosis',sans-serif;
+  margin: 40px 0;
+}
 
+.core-business h4 {
+  font-size: 25px;
+  color: #5da2e0;
+}
 
+.core-business ul {
+  margin: 19px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: capitalize;
+}
 
+.core-business li { 
+  width: 11.5%;
+  margin: 0 auto;
+  
+}
 
+.core-business h5 { 
+  margin-top: 6px;
+  color: #2c75ba;
+  font-size: 18px;
+}
+
+/* core-business css end */
 
 
 /*=================================

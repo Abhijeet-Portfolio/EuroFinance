@@ -113,7 +113,7 @@ header .wrapper {
   box-sizing: border-box;
   width: 100%;
   border-right: 10px solid #135eab;
-  background-image: linear-gradient(to right, #135eab, transparent);
+  background-image: linear-gradient(to right, #135eab 30%, transparent);
 }
 
 header .logo {
@@ -202,7 +202,7 @@ nav a {
   main styling starts here
 =================================*/
 
-/* core-business css start */
+/* core-business section start */
 
 .core-business { 
   font-family: 'dosis',sans-serif;
@@ -234,8 +234,58 @@ nav a {
   font-size: 18px;
 }
 
-/* core-business css end */
+/* core-business section end */
 
+/* flagship section start */
+
+.flagship { 
+  background-image: url('https://via.placeholder.com/1349x388');
+  font-family: 'dosis',sans-serif;
+  font-weight: 200;
+}
+
+.flagship .wrapper { 
+  box-sizing: border-box;
+  width: 100%;
+  padding: 100px 24.2% 100px 24.8%;
+  border-right: 10px solid #135eab;
+  background-image: linear-gradient(to right, #135eab 30%, transparent);
+}
+
+.flagship h4 {
+  color: #ffffffd2;
+  font-size: 26px;
+}
+
+.flagship h5 {
+  width: 35%;
+  margin-top: 10px;
+  color: #ffffffd2;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.flagship p {
+  width: 70%;
+  margin: 13px 0 25px;
+  color: #ffffffd2;
+  font-family: 'lato',sans-serif;
+  font-size: 12px;
+}
+
+.flagship a {
+  width: 19.3%;
+  padding: 6px 0;
+  display: block;
+  background-color: #269fe3;
+  color: #e6e6e6;
+  text-align: center;
+  font-family: 'lato',sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* flagship section end */
 
 /*=================================
   main styling ends here

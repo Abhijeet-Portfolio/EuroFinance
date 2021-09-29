@@ -100,17 +100,116 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 70.6%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header { background-image: linear-gradient(to right, #135eaa, #1e3060)}
+header .wrapper { width: 100%;}
 
+header .logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 70.6%;
+  margin: 0 auto;
+  padding: 29px 0 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
+}
 
+header form { 
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
+header .form-group { width: 79%;}
 
+header .search {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 7px 5% 6px;
+  border: 1px solid #56b8ed;
+  color: #9f9a95;
+  font-size: 12px;
+  outline: none;
+}
+
+header .form-control { width: 20%;}
+
+header .go {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 7px 0 6px;
+  border: 1px solid #269fe3;
+  background-color: #269fe3;
+  color: #e6e6e6;
+  text-align: center;
+  font-size: 12px;
+  outline: none;
+}
+
+header form span { display: none;}
+
+nav {
+  margin: 14px 0;
+  background-image: linear-gradient(to right, #269ee2, #1461ad ,#269ee2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'lato',sans-serif;
+  font-weight: 200;
+}
+
+nav form { display: none;}
+
+nav ul { 
+  width: 70.6%;
+  margin: 0 auto;
+}
+
+nav li {
+  margin: 0;
+  padding: 4px 1.2% 7px;  
+  text-align: center;
+  opacity: 0.8;
+}
+
+nav .active { background-color: #2babf5;}
+
+nav a {
+  
+  color: #ffffff;
+  font-size: 11.8px;
+  text-transform: capitalize;
+}
+
+.hambuger {
+  display: none;
+  text-indent: -9999px;
+}
+
+.hambuger::after {
+  content: '\f0c9';
+  float: left;
+  color: #ffffff;
+  font-family: 'fontAwesome';
+  font-size: 22px;
+  text-indent: 0;
+}
 
 /*=================================
   Header styling ends here
@@ -120,10 +219,61 @@ li {
   main styling starts here
 =================================*/
 
+main .wrapper {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'lato',sans-serif;
+}
+
+.left-side { width: 72%;}
+
+/* banking section start */
+
+.banking {
+  border: 2px solid #e6edf4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banking article { 
+  box-sizing: border-box;
+  width: 44%;
+  padding: 8px 2.3%;
+}
+
+.banking article span:first-child {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.banking h2 {
+  margin: 5px 0 0;
+  color: #2167d4;
+  font-family: 'dosis',sans-serif;
+  font-size: 25.5px;
+}
+
+.banking .date {
+  color: #afaeb6;
+  font-size: 12.3px;
+}
+
+.banking p {
+  margin-top: 2px;
+  color: #858e94;
+  font-size: 10.2px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* banking section end */
 
 
 
-
+.right-side {
+  width: 26.4%;
+}
 
 
 

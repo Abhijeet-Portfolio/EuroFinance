@@ -12,7 +12,10 @@
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style(news).css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,32 +23,44 @@
   <div class="container">
     <!--header section start-->
     <header>
-      <div class="logo">
-        <h1><a href="#FIXME" title="EuroFinance">
-          <img src="https://via.placeholder.com/188x30?text=logo" alt="EuroFinance logo">
-        </a></h1>
-        <form>
-          <div class="form-group">
-            <input type="search">
-            <span>This field is required!</span>
-          </div>
-          <div class="form-control">
-            <input type="button" value="Go">
-          </div>
-        </form>
+      <div class="wrapper">
+        <div class="logo">
+          <h1><a href="#FIXME" title="EuroFinance">
+            <img src="https://via.placeholder.com/188x30?text=logo" alt="EuroFinance logo">
+          </a></h1>
+          <form>
+            <div class="form-group">
+              <input type="search" class="search" placeholder="Search">
+              <span>This field is required!</span>
+            </div>
+            <div class="form-control">
+              <input type="button" class="go" value="Go">
+            </div>
+          </form>
+        </div>
+        <nav>
+          <ul>
+            <li class="hambuger">hamburger</li>
+            <li><a href="home.html" title="Home">home</a></li>
+            <li class="active"><a href="news.html" title="News">news</a></li>
+            <li><a href="conferences.html" title="Conferences">conferences</a></li>
+            <li><a href="#FIXME" title="Training">training</a></li>
+            <li><a href="#FIXME" title="Awards">awards</a></li>
+            <li><a href="#FIXME" title="About us">About us</a></li>
+            <li><a href="#FIXME" title="Treasury Network">treasury network</a></li>
+            <li><a href="#FIXME" title="Contact us">Contact us</a></li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <input type="search" class="search" placeholder="Search">
+              <span>This field is required!</span>
+            </div>
+            <div class="form-control">
+              <input type="button" class="go" value="Go">
+            </div>
+          </form>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#FIXME" title="Home">home</a></li>
-          <li class="active"><a href="#FIXME" title="News">news</a></li>
-          <li><a href="#FIXME" title="Conferences">conferences</a></li>
-          <li><a href="#FIXME" title="Training">training</a></li>
-          <li><a href="#FIXME" title="Awards">awards</a></li>
-          <li><a href="#FIXME" title="About us">About us</a></li>
-          <li><a href="#FIXME" title="Treasury Network">treasury network</a></li>
-          <li><a href="#FIXME" title="Contact us">Contact us</a></li>
-        </ul>
-      </nav>
     </header>
     <!--header section start-->
     <!--main section start-->
@@ -57,7 +72,7 @@
             <article>
               <span>Banking relationships</span>
               <h2>Refining Russian liquidity</h2>
-              <span>11 March 2020</span>
+              <span class="date">11 March 2020</span>
               <p>Sandvik's determination to centralise cash across its Russian operations led it to break new ground...</p>
             </article>
             <figure>

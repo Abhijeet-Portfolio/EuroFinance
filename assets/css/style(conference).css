@@ -428,6 +428,7 @@ nav a {
 }
 
 .event a {
+  margin-bottom: 35px;
   padding: 7px 4%;
   background-color: #269fe3;
   color: #c8e4f5;
@@ -435,6 +436,66 @@ nav a {
 }
 
 /* event section end */
+
+/* sign-up section start */
+
+.sign-up { 
+  padding: 30px 0 58px;
+  background-color: #11579f;
+}
+
+.sign-up .wrapper { 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sign-up .wrapper > div { width: 49%;}
+
+.sign-up h4 {
+  margin-bottom: 7px;
+  color: #c8d5e0;
+  font-family: 'dosis', sans-serif;
+  font-size: 25px;
+}
+
+.sign-up .text {
+  color: #c3d0e0;
+  font-family: 'lato',sans-serif;
+  font-size: 10.5px;
+}
+
+.sign-up form {
+  width: 49%;
+  display: flex;
+  position: relative;
+  font-family: 'lato',sans-serif;
+}
+
+.sign-up input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 0;
+  border: 1px solid #269fe3;
+  color: #e6e6e6;
+  font-size: 11px;
+  outline: none;
+}
+
+.sign-up .form-group { width: 70%;}
+.sign-up .form-group input { padding-left: 5%;}
+.sign-up .form-control { width: 30%;}
+.sign-up .form-control input { background-color: #269fe3;}
+
+.sign-up form span { 
+  display: none;
+  position: absolute;
+  color: #fc3729;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* sign-up section end */
 
 /*=================================
   main styling ends here

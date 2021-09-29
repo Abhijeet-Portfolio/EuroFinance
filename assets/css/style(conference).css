@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 50.6%; 
   margin: 0 auto;
 }
 /*=================================
@@ -265,11 +265,100 @@ nav a {
   main styling starts here
 =================================*/
 
+/* conferences section start */
 
+.conferences { 
+  margin: 18px 0;
+  font-family: 'dosis', sans-serif;
+}
 
+.conferences .wrapper > span {
+  font-family: 'lato', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
 
+.conferences span a { 
+  margin: 1%;
+  color: #000000;
+}
 
+.conferences span a:first-child { margin-left: 0;}
 
+.conferences h4 {
+  margin: 12px 0 25px;
+  color: #4a8fca;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.conferences ul { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conferences li {
+  box-sizing: border-box;
+  min-width: 31.8%;
+  max-width: 31.8%;
+  margin: 11px 2.2% 0 0;
+}
+
+.conferences h5 {
+  margin: 10px 0 2px;
+  color: #4a8fca;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.conferences li:nth-child(3),
+.conferences li:nth-child(6) { margin-right: 0;}
+
+.conferences li > span,
+.modal div span {
+  color: #8a8b8b;
+  font-family: 'lato',sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.modal {
+  width: 100%;
+  min-height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000be;
+  text-align: center;
+}
+
+.modal .close { 
+  display: block;
+  text-indent: -9999px;
+}
+
+.modal .close::after {
+  content: '\f00d';
+  position: absolute;
+  top: 30px;
+  right: 30%;
+  color: #ffffff;
+  font-family: 'fontAwesome';
+  font-size: 30px;
+  text-indent: 0;
+}
+
+.modal div {
+  width: 30%;
+  padding-bottom: 15px;
+  margin: 80px auto;
+  background-color: #ffffff;
+}
+
+/* conferences section end */
 
 
 /*=================================
@@ -291,9 +380,12 @@ nav a {
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
 
+@media only screen and (min-width: 1024px) {
 
-
+  header .form-control input:hover { background-color: transparent;}
+  nav li:hover { background-color: #2babf5;}
+  .welcome a:hover { background-color: #4482c0;}
+  .conferences li:hover { box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;}
 }  
+

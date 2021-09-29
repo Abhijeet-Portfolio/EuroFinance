@@ -110,27 +110,41 @@ li {
 header { background-image: url('https://via.placeholder.com/1349x435/999999');}
 
 header .wrapper { 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
   width: 100%;
   border-right: 10px solid #135eab;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #135eab), to(transparent));
+  background-image: -o-linear-gradient(left, #135eab 30%, transparent);
   background-image: linear-gradient(to right, #135eab 30%, transparent);
 }
 
 header .logo {
-  padding: 29px 24.2% 29px 24.8%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 52%;
+  margin: 0 auto;
+  padding: 29px 0 29px 0.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
-.logo form { 
-  width: 31.5%;
+header form { 
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.logo .form-group { width: 81.5%;}
+header .form-group { width: 79%;}
 
-.logo .search {
-  box-sizing: border-box;
+header .search {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 7px 5% 6px;
   border: 1px solid #56b8ed;
@@ -139,10 +153,11 @@ header .logo {
   outline: none;
 }
 
-.logo .form-control { width: 18.5%;}
+header .form-control { width: 20%;}
 
-.logo .go {
-  box-sizing: border-box;
+header .go {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 7px 0 6px;
   border: 1px solid #269fe3;
@@ -153,19 +168,33 @@ header .logo {
   outline: none;
 }
 
-.logo span { display: none;}
+header span { display: none;}
 
 nav {
   margin: 14px 0;
-  padding: 0 24.2% 0 24.8%;
   background-color: #269ee39f;
-  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: 'lato',sans-serif;
+  font-weight: 200;
+}
+
+nav form { display: none;}
+
+nav ul { 
+  width: 51%;
+  margin: 0 auto;
+  padding-left: 0.8%;
 }
 
 nav li {
   padding: 4px 1.5% 7px;  
   text-align: center;
+  opacity: 0.8;
 }
 
 nav .active { background-color: #2babf5;}
@@ -176,8 +205,26 @@ nav a {
   text-transform: capitalize;
 }
 
+.hambuger {
+  display: none;
+  text-indent: -9999px;
+}
+
+.hambuger::after {
+  content: '\f0c9';
+  float: left;
+  color: #ffffff;
+  font-family: 'fontAwesome';
+  font-size: 22px;
+  text-indent: 0;
+}
+
 .welcome { 
-  padding: 56px 24.2% 115px 24.8%;
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
+  width: 51%;
+  margin: 0 auto;
+  padding: 56px 0 115px 0.4%;
   font-family: 'dosis',sans-serif;
   font-weight: 300;
 }
@@ -245,10 +292,13 @@ nav a {
 }
 
 .flagship .wrapper { 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
   width: 100%;
   padding: 100px 24.2% 100px 24.8%;
   border-right: 10px solid #135eab;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #135eab), to(transparent));
+  background-image: -o-linear-gradient(left, #135eab 30%, transparent);
   background-image: linear-gradient(to right, #135eab 30%, transparent);
 }
 
@@ -301,8 +351,12 @@ nav a {
 
 .news ul {
   margin: 19px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .news li { width: 23%;}
@@ -347,11 +401,16 @@ nav a {
   margin: 30px 0;
 }
 
+
 .sign-up .form-groups,
 .sign-up .form-controls {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sign-up .form-groups .form-group { width: 46%;}
@@ -360,7 +419,8 @@ nav a {
 
 
 .sign-up input {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 5px 2%;
   border: 1px solid #ffffff;
@@ -395,9 +455,15 @@ nav a {
 .treasury-network { margin: 71px 0;}
 
 .treasury-network .wrapper {  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+        align-items: center;
   font-family: 'lato',sans-serif;
 }
 
@@ -420,8 +486,12 @@ nav a {
 }
 
 .treasury ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .treasury li { 
@@ -446,11 +516,100 @@ nav a {
   footer styling starts here
 =================================*/ 
 
+footer .wrapper { width: 100%;}
 
+footer .links {
+  padding: 36px 24% 49px 24.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1259a2;
+  font-family: 'lato',sans-serif;
+  font-weight: 400;
+}
 
+.links > li:first-child {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 7.8%;
+  width: 33%;
+}
 
+.links > li:first-child img { width: 85%;}
 
+.links > li:first-child h6 { 
+  font-size: 12px;
+  color: #c2c2c2;
+  padding-top: 8px;
+  border-top: 2px solid #8f8f8f;
+  margin-top: 10px;
+}
 
+.links h6 span {
+  color: #ececec;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.links > li:nth-child(2) { width: 34%;}
+
+.links h5 {
+  color: #c3d4e7;
+  font-family: 'dosis',sans-serif;
+  font-size: 15px;
+}
+
+.links > li:nth-child(2) ul { margin-top: 10px;}
+.links > li:nth-child(2) li { display: block;}
+
+.links > li:nth-child(2) a {
+  margin-top: 2px;
+  display: block;
+  color: #c3d4e7;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.links > li:nth-child(3) { width: 30%;}
+
+.links > li:nth-child(3) h6 {
+  color: #e6e6e6;
+  font-family: 'dosis',sans-serif;
+  font-size: 15px;
+}
+
+.terms {
+  padding: 9px 24% 9px 24.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0c4781;
+  color: #cccccc;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'lato',sans-serif;
+  font-size: 10px;
+}
+
+.terms ul { width: 52%;}
+
+.terms li { 
+  padding: 0 1% 0 0;
+  border-right: 1px solid #c5c5c5;
+}
+
+.terms li:last-child { border: 0;}
+.terms a { color: #c4c4c4;}
+.terms h6 { width: 21%;}
+.copyright { text-transform: capitalize;}
+
+.copyright::after {
+  content: '\f1f9';
+  margin-left: 2px;
+  font-family: 'fontAwesome';
+}
 
  /*=================================
   footer styling ends here
@@ -458,8 +617,206 @@ nav a {
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (min-width: 1024px) {
 
-
+  .logo .form-control input:hover { background-color: transparent;}
+  nav li:hover { background-color: #2babf5;}
+  .flagship a:hover { background: #3c7ab8;}
+  .sign-up .form-control input:hover { background-color: transparent;}
+  .treasury li:first-child:hover { background-color: #3c7ab8;}
+  .treasury li:last-child:hover { background-color: #397dbc;}
+  .treasury li:last-child:hover a { color: #eeeeee;}
+  .links > li:nth-child(2) a:hover { color: #ffffff;}
+  .terms a:hover { color: #f8f8f8;}
 
 }  
+
+@media only screen and (max-width: 1280px) {
+
+  .terms h6 { width: 22%;}
+
+}
+
+@media only screen and (max-width: 995px) {
+
+  nav ul { width: 60%;}
+  .terms ul { width: 68%;}
+  .terms h6 { width: 28%;}
+}
+
+@media only screen and (max-width: 720px) {
+
+  nav ul { 
+    width: 82%;
+    margin: 0 auto;
+  }
+
+  .core-business ul { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+  }
+
+  .core-business h4 { text-align: center; }
+
+  .core-business li { 
+    width: 24%;
+    margin: 15px auto;
+  }
+
+  .flagship h4 { text-align: center;}
+
+  .flagship h5 { 
+    width: 72%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .flagship p {
+    margin: 13px auto 25px;
+    text-align: center;
+  }
+
+  .flagship a {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .news h4 { text-align: center;}
+
+  .news ul { 
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .news li {
+    width: 50%;
+    margin: 15px auto;
+  }
+
+  .sign-up h4 { text-align: center;}
+
+  .sign-up form { 
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .treasury-network .wrapper { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .treasury-network .treasury {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+
+  .treasury-network figure { width: 80%;}
+
+  footer .links {    
+    -webkit-box-orient: vertical;    
+    -webkit-box-direction: normal;    
+        -ms-flex-direction: column;    
+            flex-direction: column;
+    text-align: center;
+  }
+
+  footer .links > li {
+    width: 40%;
+    margin: 20px auto;
+  }
+
+  footer .links > li:first-child {
+    width: 40%;
+    padding: 0;
+    margin: 25spx auto;
+  }
+
+  .terms { 
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .terms ul{
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .terms h6 {
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+
+  .logo form { display: none;}
+  .hambuger { display: block;}
+  nav ul { width: 40%;}
+  nav li { display: none;}
+
+  nav form { 
+    width: 50%;
+    display: flex;
+  }
+
+  .show {
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    opacity: 2;
+  }
+
+  .show .active { background-color: transparent;}
+
+  .show .hambuger::after {
+    content: '\f00d';
+    margin-right: 5%;
+    float: right;
+    color: #000000;
+  }
+  .show li { 
+    margin: 10px 0;
+    display: block;
+  }
+
+  .show a { 
+    color: #2786df;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  header .welcome { 
+    width: 80%;
+    text-align: center;
+  }
+
+  header .welcome h3 {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .core-business li { width: 45%;}
+  .flagship .wrapper { padding: 80px 10%;}
+
+  .news .wrapper,
+  .sign-up .wrapper,
+  .treasury-network .wrapper{ width: 90%;}
+
+  footer .links { padding: 36px 0 49px;}
+  .terms ul { width: 80%;}
+}

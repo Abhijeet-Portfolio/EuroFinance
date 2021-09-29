@@ -107,10 +107,155 @@ li {
   Header styling starts here
 =================================*/
 
+header { background-image: url('https://via.placeholder.com/1349x435/999999');}
 
+header .wrapper { 
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
+  width: 100%;
+  border-right: 10px solid #135eab;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #135eab), to(transparent));
+  background-image: -o-linear-gradient(left, #135eab 30%, transparent);
+  background-image: linear-gradient(to right, #135eab 30%, transparent);
+}
 
+header .logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 52%;
+  margin: 0 auto;
+  padding: 29px 0 29px 0.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
+}
 
+header form { 
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
+header .form-group { width: 79%;}
+
+header .search {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 7px 5% 6px;
+  border: 1px solid #56b8ed;
+  color: #9f9a95;
+  font-size: 12px;
+  outline: none;
+}
+
+header .form-control { width: 20%;}
+
+header .go {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 7px 0 6px;
+  border: 1px solid #269fe3;
+  background-color: #269fe3;
+  color: #e6e6e6;
+  text-align: center;
+  font-size: 12px;
+  outline: none;
+}
+
+header form span { display: none;}
+
+nav {
+  margin: 14px 0;
+  background-color: #269ee39f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'lato',sans-serif;
+  font-weight: 200;
+}
+
+nav form { display: none;}
+
+nav ul { 
+  width: 51%;
+  margin: 0 auto;
+  padding-left: 0.8%;
+}
+
+nav li {
+  padding: 4px 1.5% 7px;  
+  text-align: center;
+  opacity: 0.8;
+}
+
+nav .active { background-color: #2babf5;}
+
+nav a {
+  color: #ffffff;
+  font-size: 11.8px;
+  text-transform: capitalize;
+}
+
+.hambuger {
+  display: none;
+  text-indent: -9999px;
+}
+
+.hambuger::after {
+  content: '\f0c9';
+  float: left;
+  color: #ffffff;
+  font-family: 'fontAwesome';
+  font-size: 22px;
+  text-indent: 0;
+}
+
+.welcome { 
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
+  width: 51%;
+  margin: 0 auto;
+  padding: 71px 0 48px 0.4%;
+  font-family: 'dosis',sans-serif;
+  font-weight: 300;
+}
+
+.welcome h2 {
+  color: #ffffff;
+  font-size: 31px;
+}
+
+.welcome h3 {
+  width: 50%;
+  margin: 8px 0;
+  color: #56b8ed;
+  font-size: 26px;
+}
+
+.welcome span {
+  display: block;
+  color: #56b8ed;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.welcome a {
+  padding: 6px 4.3%;
+  margin-top: 17px;
+  background-color: #269fe3;
+  color: #e6e6e6;
+  font-family: 'lato',sans-serif;
+  font-size: 12px;
+}
 
 /*=================================
   Header styling ends here

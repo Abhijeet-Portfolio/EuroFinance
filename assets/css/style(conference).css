@@ -306,6 +306,9 @@ nav a {
   min-width: 31.8%;
   max-width: 31.8%;
   margin: 11px 2.2% 0 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .conferences h5 {
@@ -332,6 +335,7 @@ nav a {
   width: 100%;
   min-height: 100%;
   display: none;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -348,19 +352,22 @@ nav a {
   content: '\f00d';
   position: absolute;
   top: 30px;
-  right: 30%;
+  right: 28%;
   color: #ffffff;
   font-family: 'fontAwesome';
   font-size: 30px;
   text-indent: 0;
+  cursor: pointer;
 }
 
 .modal div {
-  width: 30%;
+  width: 35%;
   padding-bottom: 15px;
   margin: 80px auto;
   background-color: #ffffff;
 }
+
+.show-modal { display: block;}
 
 /* conferences section end */
 
@@ -587,6 +594,15 @@ footer .links {
   font-size: 15px;
 }
 
+.social-media {
+  width: 70%;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media img { border-radius: 50%;}
+
 .terms {
   padding: 9px 24% 9px 24.8%;
   display: -webkit-box;
@@ -619,6 +635,26 @@ footer .links {
   font-family: 'fontAwesome';
 }
 
+.to-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  text-indent: -9999px;  
+  transition: 0.5s;
+}
+
+.to-top::after {
+  content: '\f0aa';
+  font-family: 'fontAwesome';
+  text-indent: 0;
+  float: right;
+  color: #5897fc;
+  font-size: 50px;
+}
+
+.show-to-top { opacity: 1;}
+.hide-to-top { opacity: 0;}
+
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -637,7 +673,9 @@ footer .links {
   .sign-up .form-control input:hover { background-color: #2d84b6;}
 
   .links > li:nth-child(2) a:hover { color: #ffffff;}
+  .social-media li:hover { opacity: 0.6;}
   .terms a:hover { color: #f8f8f8;}
+  .to-top:hover::after { opacity: 0.8;}
 }  
 
 @media only screen and (max-width: 1280px) {
@@ -648,6 +686,7 @@ footer .links {
   nav ul { width: 60%;}
   .terms ul { width: 68%;}
   .terms h6 { width: 28%;}
+  .social-media { width: 90%;}
 }
 
 @media only screen and (max-width: 720px) {
@@ -669,6 +708,7 @@ footer .links {
     min-width: 70%;
     max-width: 70%;
     margin: 12px auto;
+    
   }
 
   .conferences li:nth-child(3),
@@ -725,6 +765,8 @@ footer .links {
     margin: 25spx auto;
   }
 
+  .social-media { width: 100%;}
+
   .terms { 
     padding: 0;
     -webkit-box-orient: vertical;
@@ -759,6 +801,7 @@ footer .links {
   .show {
     width: 100%;
     min-height: 100%;
+    z-index: 100;
     position: fixed;
     top: 0;
     background-color: #ffffff;
@@ -803,6 +846,8 @@ footer .links {
     max-width: 90%;
   }
 
+  .modal .close::after { right: 2%;}
+  .modal div { width: 80%;}
   .become .wrapper div { width: 100%;}
   footer .links { padding: 36px 0 49px;}
   .terms ul { width: 80%;}

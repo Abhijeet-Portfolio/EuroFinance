@@ -24,8 +24,8 @@
     <!--header section start-->
     <header>
       <div class="wrapper">
-        <div class="logo">
-          <h1><a href="#FIXME" title="EuroFinance">
+        <div class="logo" id="logo">
+          <h1><a href="home.html" title="EuroFinance">
             <img src="https://via.placeholder.com/188x30?text=logo" alt="EuroFinance logo">
           </a></h1>
           <form>
@@ -148,29 +148,29 @@
           <form>
             <div class="form-groups">
               <div class="form-group">
-                <input type="text" class="fname" placeholder="First Name">
-                <span>this field is required</span>
+                <input type="text" class="fname" maxlength="20" placeholder="First Name">
+                <span class="hide">This field is required!</span>
               </div>
               <div class="form-group">
-                <input type="text" class="lname" placeholder="Last Name">
-                <span>this field is required</span>
+                <input type="text" class="lname" maxlength="20" placeholder="Last Name">
+                <span class="hide">This field is required!</span>
               </div>
             </div>
             <div class="form-group">
               <input type="email" class="email" placeholder="Email ID">
-              <span>this field is required</span>
+              <span class="hide">This field is required!</span>
             </div>
             <div class="form-group">
-              <input type="text" class="phone" placeholder="Phone Number">
-              <span>this field is required</span>
+              <input type="text" class="phone" maxlength="10" placeholder="Phone Number">
+              <span class="hide">This field is required!</span>
             </div>
             <div class="form-group">
               <input type="password" class="password" placeholder="Password">
-              <span>this field is required</span>
+              <span class="hide">This field is required!</span>
             </div>
             <div class="form-group">
               <input type="password" class="confirm-password" placeholder="Confirm Password">
-              <span>this field is required</span>
+              <span class="hide">This field is required!</span>
             </div>
             <div class="form-controls">
               <div class="form-control">
@@ -216,9 +216,9 @@
           <li>
             <h5>Our EuroFinance.com</h5>
             <ul>
-              <li><a href="#FIXME" title="Home">home</a></li>
-              <li><a href="#FIXME" title="News">News</a></li>
-              <li><a href="#FIXME" title="Conferences">conferences</a></li>
+              <li><a href="home.html" title="Home">home</a></li>
+              <li><a href="news.html" title="News">News</a></li>
+              <li><a href="conferences.html" title="Conferences">conferences</a></li>
               <li><a href="#FIXME" title="Training">training</a></li>
               <li><a href="#FIXME" title="Awards">awrads</a></li>
               <li><a href="#FIXME" title="about us">about us</a></li>
@@ -228,11 +228,19 @@
           </li>
           <li>
             <h6>Keep updated</h6>
-            <ul>
-              <li><a href="#FIXME" title="linkedin">linkedin</a></li>
-              <li><a href="#FIXME" title="twitter">twitter</a></li>
-              <li><a href="#FIXME" title="youtube">youtube</a></li>
-              <li><a href="#FIXME" title="facebook">facebook</a></li>
+            <ul class="social-media">
+              <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="linkedin">
+                <img src="https://via.placeholder.com/30" alt="linkedin">
+              </a></li>
+              <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="twitter">
+                <img src="https://via.placeholder.com/30" alt="twitter">
+              </a></li>
+              <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="youtube">
+                <img src="https://via.placeholder.com/30" alt="youtube">
+              </a></li>
+              <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="facebook">
+                <img src="https://via.placeholder.com/30" alt="facebook">
+              </a></li>
             </ul>
           </li>
         </ul>
@@ -245,12 +253,13 @@
           </ul>
           <h6><span class="copyright">copyright</span> 2020 EuroFinance.</h6>
         </div>
+        <a href="#logo" class="to-top hide-to-top" title="To the Top">To the Top</a>
       </div>
     </footer>
     <!--footer section end-->
 
   </div>
   <!--container end-->
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script(home).js"></script>
 </body>
 </html>

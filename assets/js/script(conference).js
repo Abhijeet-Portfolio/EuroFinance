@@ -57,8 +57,47 @@ function modal(conferences, preview) {
 modal(conferences, preview);
 
 
+//form email validation
 
+var email = document.querySelector('.email');
+email.addEventListener('input', function() {validateEmail(email);});
 
+function validateEmail(email) {
+    emailRegex = /^([0-9a-zA-Z\_\.\-]+)@([a-zA-Z]+)\.([a-zA-Z]+)$/;
+    if (email.value == null || email.value == '') {
+        if ( email.nextElementSibling.classList.contains('errorShow')) {
+            email.nextElementSibling.classList.replace('errorShow','errorHide');
+        }
+    }
+    else if (!emailRegex.test(email.value)) {
+        email.nextElementSibling.classList.replace('errorHide','errorShow');
+        email.nextElementSibling.textContent = "Email ID must contain @ and .";
+    }
+    else {
+        if ( email.nextElementSibling.classList.contains('errorShow')) {
+            email.nextElementSibling.classList.replace('errorShow','errorHide');
+        }
+    }
+}
+
+(document.querySelector('.submit')).addEventListener('click', function(e) {
+    e.preventDefault();
+
+    if(email.value === '' || email.value === null) {
+        email.nextElementSibling.classList.replace('errorHide','errorShow');
+        email.nextElementSibling.textContent = "This field is required!";
+    }
+    else if (email.nextElementSibling.classList.contains('errorShow')) {
+        return;
+    }
+    else {
+        if ( email.nextElementSibling.classList.contains('errorShow')) {
+            email.nextElementSibling.classList.replace('errorShow','errorHide');
+        }
+        document.querySelector('.sign-up form').reset();
+    }
+    
+});
 
 
 

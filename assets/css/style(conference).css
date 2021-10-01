@@ -309,6 +309,7 @@ nav a {
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .conferences h5 {
@@ -503,7 +504,7 @@ nav a {
   width: 100%;
   padding: 8px 0;
   border: 1px solid #269fe3;
-  color: #e6e6e6;
+  color: #363636;
   font-size: 11px;
   outline: none;
 }
@@ -514,12 +515,18 @@ nav a {
 .sign-up .form-control input { background-color: #269fe3;}
 
 .sign-up form span { 
-  display: none;
+  display: block;
   position: absolute;
   color: #fc3729;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
+
+.sign-up form .errorShow { opacity: 1;}
+.sign-up form .errorHide { opacity: 0;}
 
 /* sign-up section end */
 

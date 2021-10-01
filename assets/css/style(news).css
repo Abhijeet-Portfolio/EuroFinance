@@ -107,7 +107,12 @@ li {
   Header styling starts here
 =================================*/
 
-header { background-image: linear-gradient(to right, #135eaa, #1e3060)}
+header { 
+  background-image: -webkit-gradient(linear, left top, right top, from(#135eaa), to(#1e3060)); 
+  background-image: -o-linear-gradient(left, #135eaa, #1e3060); 
+  background-image: linear-gradient(to right, #135eaa, #1e3060);
+}
+
 header .wrapper { width: 100%;}
 
 header .logo {
@@ -163,13 +168,15 @@ header form span { display: none;}
 
 nav {
   margin: 14px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#269ee2), color-stop(#1461ad) ,to(#269ee2));
+  background-image: -o-linear-gradient(left, #269ee2, #1461ad ,#269ee2);
   background-image: linear-gradient(to right, #269ee2, #1461ad ,#269ee2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+    justify-content: space-between;
   font-family: 'lato',sans-serif;
   font-weight: 200;
 }
@@ -221,8 +228,12 @@ nav a {
 
 main .wrapper {
   margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
   font-family: 'lato',sans-serif;
 }
 
@@ -232,12 +243,17 @@ main .wrapper {
 
 .banking {
   border: 2px solid #e6edf4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .banking article { 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
   width: 44%;
   padding: 8px 2.3%;
 }
@@ -282,13 +298,18 @@ main .wrapper {
 }
 
 .news-lists ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
   overflow: hidden;
 }
 
 .news-lists li {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 32.5%;
   min-width: 32.5%;
   padding-right: 2%;
@@ -336,6 +357,7 @@ main .wrapper {
 .must-see {
   border-bottom: 1px solid #d4e0ec;
   margin-bottom: 14px;
+  overflow: hidden;
 }
 
 .must-see h2 {
@@ -346,10 +368,12 @@ main .wrapper {
 }
 
 .must-see .news-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   z-index: 10;
   position: relative;
-  overflow: hidden;
+  transition: 0.5s;
 }
 
 .news-slider li {
@@ -419,13 +443,17 @@ main .wrapper {
 /* other-news section start */
 
 .other-news ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: 'lato',sans-serif;
 }
 
 .other-news li {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 32.5%;
   min-width: 32.3%;
   padding-right: 2%;
@@ -484,6 +512,8 @@ main .wrapper {
   text-align: center;
 }
 
+.hide-show-more { display: none;}
+
 /* other-news section end */
 
 .right-side {
@@ -492,8 +522,11 @@ main .wrapper {
 }
 
 .stay-up { 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+          box-sizing: border-box;
   padding: 10px 4.5% 12px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#1e2f65), to(#2ebcf0));
+  background-image: -o-linear-gradient(bottom left, #1e2f65, #2ebcf0);
   background-image: linear-gradient(to top right, #1e2f65, #2ebcf0);
 }
 
@@ -639,8 +672,12 @@ footer .links {
 .social-media {
   width: 52%;
   margin-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .social-media img { border-radius: 50%;}
@@ -687,7 +724,8 @@ footer .links {
   right: 2%;
   bottom: 2%;
   text-indent: -9999px;
-  opacity: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -700,6 +738,7 @@ footer .links {
   font-size: 50px;
 }
 
+.show-to-top { opacity: 1;}
 .hide-to-top { opacity: 0;}
 
  /*=================================
@@ -772,7 +811,7 @@ footer .links {
   footer .links > li:first-child {
     width: 40%;
     padding: 0;
-    margin: 25spx auto;
+    margin: 25px auto;
   }
 
   .social-media { width: 100%;}

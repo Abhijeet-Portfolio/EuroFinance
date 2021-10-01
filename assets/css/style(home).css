@@ -281,6 +281,8 @@ nav a {
   font-size: 18px;
 }
 
+.core-business h5 a { color: inherit;}
+
 /* core-business section end */
 
 /* flagship section start */
@@ -628,6 +630,8 @@ footer .links {
   right: 2%;
   bottom: 2%;
   text-indent: -9999px;  
+  -webkit-transition: 0.5s;  
+  -o-transition: 0.5s;  
   transition: 0.5s;
 }
 
@@ -653,6 +657,7 @@ footer .links {
 
   .logo .form-control input:hover { background-color: transparent;}
   nav li:hover { background-color: #2babf5;}
+  .core-business h5:hover a { text-decoration: underline;}
   .flagship a:hover { background: #3c7ab8;}
   .sign-up .form-control input:hover { background-color: transparent;}
   .treasury li:first-child:hover { background-color: #3c7ab8;}
@@ -771,7 +776,7 @@ footer .links {
   footer .links > li:first-child {
     width: 40%;
     padding: 0;
-    margin: 25spx auto;
+    margin: 25px auto;
   }
 
   footer .links > :nth-child(3) { width: 40%;}

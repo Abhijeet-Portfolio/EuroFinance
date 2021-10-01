@@ -154,6 +154,20 @@ function confirmPasswordCheck() {
     }
 }
 
+// show password checkbox 
+
+var showPassword = document.querySelector('#showPassword');
+showPassword.addEventListener('click', function() {
+    if (password.type === 'password') {
+        password.type = 'text';
+        confirmPassword.type = 'text';
+    } 
+    else {
+        password.type = 'password';
+        confirmPassword.type = 'password';
+    }
+});
+
 //submit the form
 
 var submit = document.querySelector('.submit');
@@ -188,9 +202,6 @@ submit.addEventListener('click', function(e) {
 });
 
 
-
-
-
 //clear the form
 
 var clear = document.querySelector('.clear');
@@ -210,5 +221,10 @@ clear.addEventListener('click',function (e) {
     clearError(phoneNumber)
     clearError(password);
     clearError(confirmPassword);
+
+    if(password.type === 'text') {
+        password.type = 'password';
+        confirmPassword.type = 'password';
+    }
 
 });

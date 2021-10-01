@@ -113,6 +113,7 @@ var sliderLi = document.querySelectorAll('.news-slider li');
 
 var count = 0;
 var size = sliderLi[0].clientWidth;
+console.log(sliderLi[0].clientWidth);
 
 var next = document.querySelector('.slider-control .next');
 var prev = document.querySelector('.slider-control .prev');
@@ -120,7 +121,7 @@ var prev = document.querySelector('.slider-control .prev');
 next.addEventListener('click', function() {    
     if (count >= (sliderLi.length - 3)) return;
     count += 3;
-    slider.style.transform = 'translateX(' + (-size * count) + 'px)';
+    slider.style.transform = 'translateX(' + ((-size * count) - (sliderLi[0].clientWidth/sliderLi.length)) + 'px)';
 });
 
 prev.addEventListener('click', function() {

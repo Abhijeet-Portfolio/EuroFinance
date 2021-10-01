@@ -368,6 +368,8 @@ nav a {
   font-size: 17px;
 }
 
+.news h5 a { color: inherit;}
+
 .news span {
   color: #bac1d1;
   font-family: 'lato',sans-serif;
@@ -439,6 +441,19 @@ nav a {
 .sign-up .form-control input {
   border: 1px solid #2c75ba;
   background-color: #2c75ba;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input { width: auto;}
+
+.checkbox label { 
+  margin-left: 2%;
+  color: #dadada;
+  font-size: 13px;
 }
 
 .sign-up span { 
@@ -659,6 +674,7 @@ footer .links {
   nav li:hover { background-color: #2babf5;}
   .core-business h5:hover a { text-decoration: underline;}
   .flagship a:hover { background: #3c7ab8;}
+  .news h5:hover a { text-decoration: underline;}
   .sign-up .form-control input:hover { background-color: transparent;}
   .treasury li:first-child:hover { background-color: #3c7ab8;}
   .treasury li:last-child:hover { background-color: #397dbc;}

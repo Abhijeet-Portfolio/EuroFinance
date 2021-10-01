@@ -512,7 +512,11 @@ nav a {
 .sign-up .form-group { width: 70%;}
 .sign-up .form-group input { padding-left: 5%;}
 .sign-up .form-control { width: 30%;}
-.sign-up .form-control input { background-color: #269fe3;}
+
+.sign-up .form-control input { 
+  background-color: #269fe3;
+  color: #dfdfdf;
+}
 
 .sign-up form span { 
   display: block;
@@ -673,6 +677,7 @@ footer .links {
   header .form-control input:hover { background-color: transparent;}
   nav li:hover { background-color: #2babf5;}
   .welcome a:hover { background-color: #4482c0;}
+  .conferences span a:hover { color: #8a8b8b;}
   .conferences li:hover { box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;}
   
   .become a:hover, 

@@ -30,7 +30,10 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html { 
+   overflow-y: scroll; 
+   scroll-behavior: smooth;
+}
 
 /* Align radios and text inputs with their label */
 
